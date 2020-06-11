@@ -1,0 +1,23 @@
+zephyr-crosstool-ng (1.24.0.4-2) unstable; urgency=low
+
+  * Fix version
+
+ -- Stephanos Ioannidis <root@stephanos.io>  Thu, 11 Jun 2019 18:22:10 +0900
+
+zephyr-crosstool-ng (1.24.0.4-1) unstable; urgency=low
+
+  * Rename to zephyr-crosstool-ng
+
+ -- Stephanos Ioannidis <root@stephanos.io>  Thu, 11 Jun 2019 10:35:47 +0900
+
+zephyr-crosstool-ng (1.23.0-1) unstable; urgency=low
+
+  * Initial upload, Closes: #721430
+
+ -- Multiple Candidates <open@example.com>  Wed, 24 May 2017 13:47:31 +0200
+
+zephyr-crosstool-ng (1.22.0git) unstable; urgency=low
+
+  * Initial Debianized Release.
+
+ -- Andrew 'Necromant' Andrianov <andrew@ncrmnt.org>  Mon, 07 Dec 2015 20:53:53 +0300
