@@ -1,0 +1,17 @@
+Source: zephyr-crosstool-riscv
+Section: devel
+Priority: optional
+Maintainer: Stephanos Ioannidis <root@stephanos.io>
+Build-Depends: debhelper (>= 9), build-essential,
+	       autoconf, automake, bison, flex, gawk, gettext, git, help2man,
+	       libboost-dev, libboost-regex-dev, libncurses5-dev, libtool-bin,
+	       libtool-doc, m4, pkg-config, python3-dev, texinfo,
+	       zephyr-crosstool-ng
+Standards-Version: 3.9.8
+Homepage: https://github.com/stephanosio/zephyr-crosstool-ng
+
+Package: zephyr-crosstool-riscv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zephyr RISC-V Cross Compiler Toolchain
+ RISC-V Cross Compiler Toolchain for Zephyr RTOS Development
