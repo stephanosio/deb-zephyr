@@ -1,0 +1,17 @@
+Source: zephyr-crosstool-xtensa-intel-byt-adsp
+Section: devel
+Priority: optional
+Maintainer: Stephanos Ioannidis <root@stephanos.io>
+Build-Depends: debhelper (>= 9), build-essential,
+	       autoconf, automake, bison, flex, gawk, gettext, git, help2man,
+	       libboost-dev, libboost-regex-dev, libncurses5-dev, libtool-bin,
+	       libtool-doc, m4, pkg-config, python3-dev, texinfo,
+	       zephyr-crosstool-ng
+Standards-Version: 3.9.8
+Homepage: https://github.com/stephanosio/zephyr-crosstool-ng
+
+Package: zephyr-crosstool-xtensa-intel-byt-adsp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zephyr Xtensa Intel BYT ADSP Cross Compiler Toolchain
+ Xtensa Intel BYT ADSP Cross Compiler Toolchain for Zephyr RTOS Development

@@ -1,0 +1,5 @@
+zephyr-crosstool-xtensa-intel-byt-adsp (1.24.0.4-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Stephanos Ioannidis <root@stephanos.io>  Thu, 12 Jun 2019 21:41:32 +0900
