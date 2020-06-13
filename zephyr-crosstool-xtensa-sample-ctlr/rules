@@ -1,0 +1,50 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#DH_VERBOSE = 1
+
+# Clear conflicting environment variables
+unexport CFLAGS
+unexport CPPFLAGS
+unexport CXXFLAGS
+unexport LDFLAGS
+
+# Set build output path
+export CT_PREFIX=${CURDIR}/output
+
+
+%:
+	dh $@
+
+
+override_dh_auto_configure:
+	# Load default target configurations
+	ct-ng xtensa-sample_controller_zephyr-elf
+
+	# Set build configurations
+	echo 'CT_CLEAN_AFTER_BUILD_STEP=y' >> .config
+	echo 'CT_LOCAL_TARBALLS_DIR="${CURDIR}/sources"' >> .config
+	echo 'CT_GDB_CROSS_PYTHON_BINARY="python3"' >> .config
+
+	# Set logging configurations
+	echo 'CT_LOG_PROGRESS_BAR=n' >> .config
+	echo 'CT_LOG_EXTRA=n' >> .config
+	echo 'CT_LOG_ALL=y' >> .config
+	echo 'CT_LOG_LEVEL_MAX="ALL"' >> .config
+
+	# Merge configurations
+	ct-ng savedefconfig DEFCONFIG=build.config
+	ct-ng distclean
+	ct-ng defconfig DEFCONFIG=build.config
+
+override_dh_auto_build:
+	# Build target toolchain
+	ct-ng build
+
+override_dh_install:
+	# Run install
+	dh_install -Xbuild.log.bz2
+
+override_dh_strip:
+	# ct-ng already strips all host executables
+	echo "Skipping strip"

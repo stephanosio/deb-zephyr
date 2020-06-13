@@ -1,0 +1,5 @@
+zephyr-crosstool-xtensa-sample-ctlr (1.24.0.4-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Stephanos Ioannidis <root@stephanos.io>  Thu, 13 Jun 2019 15:36:15 +0900
