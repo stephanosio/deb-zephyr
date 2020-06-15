@@ -1,0 +1,9 @@
+# source fir these files is actually present and is being built on debian too
+zephyr-qemu source: source-is-missing pc-bios/hppa-firmware.img
+zephyr-qemu source: source-is-missing pc-bios/openbios-ppc
+zephyr-qemu source: source-is-missing pc-bios/openbios-sparc32
+zephyr-qemu source: source-is-missing pc-bios/openbios-sparc64
+zephyr-qemu source: source-is-missing pc-bios/palcode-clipper
+zephyr-qemu source: source-is-missing pc-bios/s390-ccw.img
+zephyr-qemu source: source-is-missing pc-bios/s390-netboot.img
+zephyr-qemu source: source-is-missing pc-bios/u-boot.e500

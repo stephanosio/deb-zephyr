@@ -1,0 +1,5 @@
+zephyr-qemu (5.0.0.1-4) unstable; urgency=low
+
+  * Initial release
+
+ -- Stephanos Ioannidis <root@stephanos.io>  Thu, 15 Jun 2020 09:44:01 +0900

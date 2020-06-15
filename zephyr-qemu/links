@@ -1,0 +1,11 @@
+/opt/zephyr/qemu/bin/zephyr-qemu-img /usr/bin/zephyr-qemu-img
+/opt/zephyr/qemu/bin/zephyr-qemu-system-aarch64 /usr/bin/zephyr-qemu-system-aarch64
+/opt/zephyr/qemu/bin/zephyr-qemu-system-arc /usr/bin/zephyr-qemu-system-arc
+/opt/zephyr/qemu/bin/zephyr-qemu-system-arm /usr/bin/zephyr-qemu-system-arm
+/opt/zephyr/qemu/bin/zephyr-qemu-system-i386 /usr/bin/zephyr-qemu-system-i386
+/opt/zephyr/qemu/bin/zephyr-qemu-system-nios2 /usr/bin/zephyr-qemu-system-nios2
+/opt/zephyr/qemu/bin/zephyr-qemu-system-riscv32 /usr/bin/zephyr-qemu-system-riscv32
+/opt/zephyr/qemu/bin/zephyr-qemu-system-riscv64 /usr/bin/zephyr-qemu-system-riscv64
+/opt/zephyr/qemu/bin/zephyr-qemu-system-sparc /usr/bin/zephyr-qemu-system-sparc
+/opt/zephyr/qemu/bin/zephyr-qemu-system-x86_64 /usr/bin/zephyr-qemu-system-x86_64
+/opt/zephyr/qemu/bin/zephyr-qemu-system-xtensa /usr/bin/zephyr-qemu-system-xtensa

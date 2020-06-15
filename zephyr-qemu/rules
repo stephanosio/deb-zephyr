@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#DH_VERBOSE = 1
+
+export QEMU_PKGVERSION=zephyr-qemu-v5.0.0.1
+
+export QEMU_TARGETS= \
+	  aarch64-softmmu \
+	  arc-softmmu \
+	  arm-softmmu \
+	  i386-softmmu \
+	  nios2-softmmu \
+	  riscv32-softmmu \
+	  riscv64-softmmu \
+	  sparc-softmmu \
+	  x86_64-softmmu \
+	  xtensa-softmmu \
+
+export QEMU_FLAGS= \
+	  --disable-docs --disable-sdl --disable-gtk --disable-debug-info \
+	  --disable-cap-ng --disable-libnfs --disable-libusb \
+	  --disable-libiscsi --disable-usb-redir --disable-linux-aio \
+	  --disable-guest-agent --disable-libssh --disable-vnc --disable-kvm \
+	  --disable-seccomp --disable-tpm --disable-numa --disable-glusterfs \
+	  --disable-virtfs --disable-xen --disable-curl --disable-attr \
+	  --disable-curses --disable-iconv
+
+
+%:
+	dh $@
+
+
+override_dh_auto_configure:
+	./configure \
+		${QEMU_FLAGS} \
+		--with-pkgversion="${QEMU_PKGVERSION}" \
+		--target-list="${QEMU_TARGETS}" \
+		--prefix=/opt/zephyr/qemu
+
+override_dh_auto_test:
+	echo "Skipping test"

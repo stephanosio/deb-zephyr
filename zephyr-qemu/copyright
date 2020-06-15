@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: zephyr-qemu
+Source: https://github.com/stephanosio/zephyr-crosstool-ng/
+
+Files: *
+Copyright: 2014, 2015, 2016, 2018 Free Software Foundation, Inc.
+           2015 Crosstool-NG Developers
+License: GPL-2.0+

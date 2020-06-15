@@ -1,0 +1,17 @@
+Source: zephyr-qemu
+Section: devel
+Priority: optional
+Maintainer: Stephanos Ioannidis <root@stephanos.io>
+Build-Depends: debhelper (>= 9), build-essential,
+	       autoconf, automake, bison, flex, gettext, git, help2man,
+	       libglib2.0-dev, libncurses5-dev, libpixman-1-dev,
+	       libtool-bin, libtool-doc, pkg-config, python3-dev, texinfo,
+	       zlib1g-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/stephanosio/zephyr-qemu
+
+Package: zephyr-qemu
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zephyr QEMU Target Platform Emulator
+ QEMU Target Platform Emulator for Zephyr RTOS Development
