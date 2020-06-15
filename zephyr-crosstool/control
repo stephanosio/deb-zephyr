@@ -1,0 +1,27 @@
+Source: zephyr-crosstool
+Section: devel
+Priority: optional
+Maintainer: Stephanos Ioannidis <root@stephanos.io>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/stephanosio/zephyr-crosstool-ng
+
+Package: zephyr-crosstool
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+	 zephyr-crosstool-aarch64 (>= 1.24.0.4),
+	 zephyr-crosstool-arc (>= 1.24.0.4),
+	 zephyr-crosstool-arm (>= 1.24.0.4),
+	 zephyr-crosstool-nios2 (>= 1.24.0.4),
+	 zephyr-crosstool-riscv (>= 1.24.0.4),
+	 zephyr-crosstool-sparc (>= 1.24.0.4),
+	 zephyr-crosstool-x86 (>= 1.24.0.4),
+	 zephyr-crosstool-xtensa-intel-apl-adsp (>= 1.24.0.4),
+	 zephyr-crosstool-xtensa-intel-bdw-adsp (>= 1.24.0.4),
+	 zephyr-crosstool-xtensa-intel-byt-adsp (>= 1.24.0.4),
+	 zephyr-crosstool-xtensa-intel-s1000 (>= 1.24.0.4),
+	 zephyr-crosstool-xtensa-nxp-imx-adsp (>= 1.24.0.4),
+	 zephyr-crosstool-xtensa-nxp-imx8m-adsp (>= 1.24.0.4),
+	 zephyr-crosstool-xtensa-sample-ctlr (>= 1.24.0.4)
+Description: Zephyr Cross Compiler Toolchain
+ Cross Compiler Toolchain for Zephyr RTOS Development
